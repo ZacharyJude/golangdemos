@@ -1,0 +1,7 @@
+{{/*{{define "t01"}}{{with $arg1,$arg2,$arg3}}I got 3 args: {{$arg1}}, {{$arg2}}, {{$arg3}} {{end}} {{end}}*/}}
+
+{{define "t01"}}I got {{.abc}} {{end}}
+
+{{define "t02"}}
+hey hey {{template "t01" { abc:"shit!" } }}
+{{end}}

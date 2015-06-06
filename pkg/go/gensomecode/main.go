@@ -17,6 +17,7 @@ import (
 // hihi
 // what?
 type SampleStruct0 struct {
+	// doc for Field0
 	Field0 string `json:"field_0" sql:"col_field_0"`
 	Field1 int    `json:"field_1"`
 	field2 []byte
@@ -27,6 +28,7 @@ type SampleStruct1 struct {
 	Field3 string `json:"field_3" sql:"col_field_3"`
 	Field4 int    `json:"field_4"`
 	field5 []byte
+	Field6 *SampleStruct0
 }
 
 type x struct{}
@@ -65,9 +67,7 @@ func genDeclWithTagInDoc(tag string, node ast.Node) []*ast.GenDecl {
 		}
 		return true
 	})
-
 	return out
-
 }
 
 func Gen0() {
