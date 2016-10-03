@@ -3,8 +3,8 @@ package main
 import "fmt"
 import "reflect"
 
-import "github.com/zacharyjude/golangdemos/extend_struct/pkg0"
-import "github.com/zacharyjude/golangdemos/extend_struct/pkg1"
+import "github.com/golangdemos/extend_struct/pkg0"
+import "github.com/golangdemos/extend_struct/pkg1"
 
 func main() {
 
